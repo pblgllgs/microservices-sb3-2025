@@ -1,0 +1,156 @@
+services:
+  configserver:
+    image: "pblgllgs/configserver-service-2025:${IMAGE_VERSION}"
+    container_name: configserver
+    ports:
+      - "8071:8071"
+    healthcheck:
+      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    extends:
+      file: common-config.yaml
+      service: microservice-base-config
+
+  accounts:
+    image: "pblgllgs/accounts-service-2025:${IMAGE_VERSION}"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    depends_on:
+      configserver:
+        condition: service_healthy
+      mysql_accounts:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: accounts
+      SPRING_DATASOURCE_URL: "jdbc:mysql://mysql_accounts:3306/db_local_accounts"
+    extends:
+      file: common-config.yaml
+      service: microservice-configserver-config
+
+  loans:
+    image: "pblgllgs/loans-service-2025:${IMAGE_VERSION}"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    depends_on:
+      configserver:
+        condition: service_healthy
+      mysql_loans:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: loans
+      SPRING_DATASOURCE_URL: "jdbc:mysql://mysql_loans:3306/db_local_loans"
+    extends:
+      file: common-config.yaml
+      service: microservice-configserver-config
+
+  cards:
+    image: "pblgllgs/cards-service-2025:${IMAGE_VERSION}"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    depends_on:
+      configserver:
+        condition: service_healthy
+      mysql_cards:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: cards
+      SPRING_DATASOURCE_URL: "jdbc:mysql://mysql_cards:3306/db_local_cards"
+    extends:
+      file: common-config.yaml
+      service: microservice-configserver-config
+
+  mysql_accounts:
+    container_name: mysql_db_accounts
+    image: mysql:8.0.32
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_USERNAME: root
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db_local_accounts
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - volume_mysql_db_accounts:/var/lib/mysql
+      #carga al iniciar
+      #- ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD","mysqladmin","ping","-h","localhost"]
+      interval: 2s
+      timeout: 20s
+      retries: 10
+    extends:
+      file: common-config.yaml
+      service: network-deploy-service
+
+  mysql_loans:
+    container_name: mysql_db_loans
+    image: mysql:8.0.32
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_USERNAME: root
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db_local_loans
+    ports:
+      - "3307:3306"
+    expose:
+      - "3307"
+    volumes:
+      - volume_mysql_db_loans:/var/lib/mysql
+      #carga al iniciar
+      #- ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: "/usr/bin/mysql --user=root --password=password --execute \"SHOW DATABASES;\""
+      interval: 2s
+      timeout: 20s
+      retries: 10
+    extends:
+      file: common-config.yaml
+      service: network-deploy-service
+
+  mysql_cards:
+    container_name: mysql_db_cards
+    image: mysql:8.0.32
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_USERNAME: root
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db_local_cards
+    ports:
+      - "3308:3306"
+    expose:
+      - "3308"
+    volumes:
+      - volume_mysql_db_cards:/var/lib/mysql
+      #carga al iniciar
+      #- ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: "/usr/bin/mysql --user=root --password=password --execute \"SHOW DATABASES;\""
+      interval: 2s
+      timeout: 20s
+      retries: 10
+    extends:
+      file: common-config.yaml
+      service: network-deploy-service
+
+networks:
+  microservices-network:
+    driver: "bridge"
+
+volumes:
+  volume_mysql_db_accounts:
+    external: false
+  volume_mysql_db_loans:
+    external: false
+  volume_mysql_db_cards:
+    external: false

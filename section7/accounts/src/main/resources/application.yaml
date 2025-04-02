@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: accounts
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_local_accounts
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    database: mysql
+  config:
+    import: optional:configserver:http://localhost:8071/
+  profiles:
+    active: prod
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
