@@ -6,7 +6,10 @@ package com.pblgllgs.accounts.service.impl;
  *
  */
 
-import com.pblgllgs.accounts.dto.*;
+import com.pblgllgs.accounts.dto.AccountsDto;
+import com.pblgllgs.accounts.dto.CardsDto;
+import com.pblgllgs.accounts.dto.CustomerDetailsDto;
+import com.pblgllgs.accounts.dto.LoansDto;
 import com.pblgllgs.accounts.entity.Accounts;
 import com.pblgllgs.accounts.entity.Customer;
 import com.pblgllgs.accounts.exception.ResourceNotFoundException;
@@ -51,10 +54,14 @@ public class CustomerServiceImpl implements ICustomerService {
                 ));
         CustomerDetailsDto customerDetailsDto = CustomerMapper.mapToCustomerDetailsDto(customer, new CustomerDetailsDto());
         customerDetailsDto.setAccountsDto(AccountsMapper.mapToAccountsDto(accounts, new AccountsDto()));
-        ResponseEntity<CardsDto> cardsDtoResponseEntity = cardsFeignClient.fetchCardDetails(correlationId,mobileNumber);
-        ResponseEntity<LoansDto> loansDtoResponseEntity = loansFeignClient.fetchLoanDetails(correlationId,mobileNumber);
-        customerDetailsDto.setCardsDto(cardsDtoResponseEntity.getBody());
-        customerDetailsDto.setLoansDto(loansDtoResponseEntity.getBody());
+        ResponseEntity<LoansDto> loansDtoResponseEntity = loansFeignClient.fetchLoanDetails(correlationId, mobileNumber);
+        if (null != loansDtoResponseEntity) {
+            customerDetailsDto.setLoansDto(loansDtoResponseEntity.getBody());
+        }
+        ResponseEntity<CardsDto> cardsDtoResponseEntity = cardsFeignClient.fetchCardDetails(correlationId, mobileNumber);
+        if (null != cardsDtoResponseEntity) {
+            customerDetailsDto.setCardsDto(cardsDtoResponseEntity.getBody());
+        }
         return customerDetailsDto;
     }
 }

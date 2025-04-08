@@ -29,7 +29,7 @@
     </scm>
     <properties>
         <java.version>17</java.version>
-        <version.stage>s9</version.stage>
+        <version.stage>s10</version.stage>
         <spring-cloud.version>2023.0.5</spring-cloud.version>
     </properties>
     <dependencyManagement>
@@ -98,6 +98,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
         </dependency>
     </dependencies>
 
