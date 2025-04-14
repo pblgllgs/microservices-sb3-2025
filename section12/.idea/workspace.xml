@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14154d0d-4ce0-4650-9ae6-711c4886aed3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/accounts/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/AccountsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/audit/AuditAwareImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/constants/AccountsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/controller/AccountsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/controller/WelcomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/dto/AccountsContactInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/dto/AccountsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/dto/CardsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/dto/CustomerDetailsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/dto/ErrorResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/dto/LoansDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/dto/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/entity/Accounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/exception/CustomerAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/mapper/AccountsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/repository/AccountsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/service/IAccountsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/service/client/CardsFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/service/client/CardsFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/service/client/LoansFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/service/client/LoansFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/service/impl/AccountsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/pblgllgs/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/test/java/com/pblgllgs/accounts/AccountsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/CardsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/audit/AuditAwareImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/constants/CardsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/controller/CardsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/dto/CardsContactInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/dto/CardsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/dto/ErrorResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/dto/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/entity/Cards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/exception/CardAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/mapper/CardsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/repository/CardsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/service/ICardsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/pblgllgs/cards/service/impl/CardsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/test/java/com/pblgllgs/cards/CardsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configfiles" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/java/com/pblgllgs/configserver/ConfigserverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-prod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-qa.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-prod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-qa.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-prod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-qa.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/test/java/com/pblgllgs/configserver/ConfigserverApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/buckets/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/config/config.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/format.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/.minio.sys/pool.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/loki-data/loki_cluster_seed.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/loki-data/tenant1/56a2591f8e2a4555/19610d3f55b1961b0f264aa77199fb/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.data/minio/loki-data/tenant1/56a2591f8e2a4555/19610d3f55b196201b3a8dca3ad6da/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/alloy/alloy-local-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/grafana/datasource.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/loki/loki-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/prometheus/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/tempo/tempo.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/prod/common-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/qa/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/java/com/pblgllgs/eurekaserver/EurekaserverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/test/java/com/pblgllgs/eurekaserver/EurekaserverApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/pblgllgs/gatewayserver/GatewayserverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/pblgllgs/gatewayserver/config/KeycloakRoleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/pblgllgs/gatewayserver/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/pblgllgs/gatewayserver/controller/FallbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/pblgllgs/gatewayserver/filters/FilterUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/pblgllgs/gatewayserver/filters/RequestTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/pblgllgs/gatewayserver/filters/ResponseTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/test/java/com/pblgllgs/gatewayserver/GatewayserverApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/LoansApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/audit/AuditAwareImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/constants/LoansConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/controller/LoansController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/dto/ErrorResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/dto/LoansContactInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/dto/LoansDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/dto/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/entity/Loans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/mapper/LoansMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/repository/LoansRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/service/ILoansService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/pblgllgs/loans/service/impl/LoansServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/test/java/com/pblgllgs/loans/LoansApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2vUq2uLG4QcYmE70DE2j3rURY2G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.default/docker-compose.yaml.configserver: Compose Deployment.executor": "Run",
+    "Docker.default/docker-compose.yaml.gatewayserver: Compose Deployment.executor": "Run",
+    "Docker.default/docker-compose.yaml.keycloak: Compose Deployment.executor": "Run",
+    "Docker.default/docker-compose.yaml.redis: Compose Deployment.executor": "Run",
+    "Docker.default/docker-compose.yaml: Compose Deployment.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AccountsApplication.executor": "Run",
+    "Spring Boot.CardsApplication.executor": "Run",
+    "Spring Boot.ConfigserverApplication.executor": "Run",
+    "Spring Boot.EurekaserverApplication.executor": "Run",
+    "Spring Boot.GatewayserverApplication.executor": "Run",
+    "Spring Boot.LoansApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Spring/2025/microservices/eazybytes/section12",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.19238281",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Spring\2025\microservices\eazybytes\section11\docker-compose\observability\alloy" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.default/docker-compose.yaml.gatewayserver: Compose Deployment">
+    <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="accounts" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pblgllgs.accounts.AccountsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cards" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pblgllgs.cards.CardsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="configserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pblgllgs.configserver.ConfigserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eurekaserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pblgllgs.eurekaserver.EurekaserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="gatewayserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pblgllgs.gatewayserver.GatewayserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="loans" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pblgllgs.loans.LoansApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default/docker-compose.yaml.configserver: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="configserver" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default/docker-compose.yaml.gatewayserver: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="gatewayserver" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default/docker-compose.yaml.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="keycloak" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default/docker-compose.yaml.redis: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="redis" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.default/docker-compose.yaml.gatewayserver: Compose Deployment" />
+        <item itemvalue="Docker.default/docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.default/docker-compose.yaml.redis: Compose Deployment" />
+        <item itemvalue="Docker.default/docker-compose.yaml.keycloak: Compose Deployment" />
+        <item itemvalue="Docker.default/docker-compose.yaml.configserver: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14154d0d-4ce0-4650-9ae6-711c4886aed3" name="Changes" comment="" />
+      <created>1744209797136</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744209797136</updated>
+      <workItem from="1744209798306" duration="4410000" />
+      <workItem from="1744295374468" duration="4192000" />
+      <workItem from="1744386261033" duration="49000" />
+      <workItem from="1744386491363" duration="1462000" />
+      <workItem from="1744644019780" duration="6359000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
